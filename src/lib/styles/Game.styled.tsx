@@ -1,23 +1,35 @@
+'use client'
 import styled from "styled-components";
 
 interface ImageProps {
    $url: string;
    $rot?: boolean;
    $rotVal?: number;
+   $height: number;
+   $width: number;
 }
 
-export const Grid = styled.div``;
+export const StyledGameboard = styled.div`
+   border: 1px solid black;
+   height: 800px;
 
-export const Cell = styled.div``;
+`;
 
-export const Panel = styled.div``;
+export const StyledGridCell = styled.div`
+   height: 5%;
+   width: 5%;
+`;
 
-export const GamePiece = styled.img.attrs<ImageProps>(props => ({
+export const StyledPanel = styled.div`
+   height: 100%;
+`;
+
+export const StyledGamePiece = styled.img.attrs<ImageProps>(props => ({
    $url: props.$url,
    $rotVal: props.$rot ? 90 : 0,
 }))`
-   src: ${props => require(props.$url)};
+   src: require(${props => props.$url});
    transform: rotate(${props => props.$rotVal});
-   height: 10px;
-   width: 5px;
+   height: ${props => props.$height}px;
+   width: ${props=> props.$width}px;
 `;

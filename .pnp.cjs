@@ -26,11 +26,13 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@types/lodash", "npm:4.14.202"],\
           ["@types/node", "npm:20.11.19"],\
           ["@types/react", "npm:18.2.55"],\
           ["@types/react-dom", "npm:18.2.19"],\
           ["@types/styled-components", "npm:5.1.34"],\
           ["global", "npm:4.4.0"],\
+          ["lodash", "npm:4.17.21"],\
           ["next", "virtual:50e85ef9d5547024c611831f29d158849bf7dba5322ea76af112b110c8d711d09c34d13c5ea9edd585cabba68bca75952447616351092b2740614023d257a4af#npm:14.1.0"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
@@ -180,6 +182,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/lodash", [\
+      ["npm:4.14.202", {\
+        "packageLocation": "../../../../.local/share/yarn/berry/cache/@types-lodash-npm-4.14.202-76de3e302b-10c0.zip/node_modules/@types/lodash/",\
+        "packageDependencies": [\
+          ["@types/lodash", "npm:4.14.202"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/node", [\
       ["npm:20.11.19", {\
         "packageLocation": "../../../../.local/share/yarn/berry/cache/@types-node-npm-20.11.19-5d4958999b-10c0.zip/node_modules/@types/node/",\
@@ -256,11 +267,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["battleship", "workspace:."],\
+          ["@types/lodash", "npm:4.14.202"],\
           ["@types/node", "npm:20.11.19"],\
           ["@types/react", "npm:18.2.55"],\
           ["@types/react-dom", "npm:18.2.19"],\
           ["@types/styled-components", "npm:5.1.34"],\
           ["global", "npm:4.4.0"],\
+          ["lodash", "npm:4.17.21"],\
           ["next", "virtual:50e85ef9d5547024c611831f29d158849bf7dba5322ea76af112b110c8d711d09c34d13c5ea9edd585cabba68bca75952447616351092b2740614023d257a4af#npm:14.1.0"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
@@ -389,6 +402,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../.local/share/yarn/berry/cache/js-tokens-npm-4.0.0-0ac852e9e2-10c0.zip/node_modules/js-tokens/",\
         "packageDependencies": [\
           ["js-tokens", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash", [\
+      ["npm:4.17.21", {\
+        "packageLocation": "../../../../.local/share/yarn/berry/cache/lodash-npm-4.17.21-6382451519-10c0.zip/node_modules/lodash/",\
+        "packageDependencies": [\
+          ["lodash", "npm:4.17.21"]\
         ],\
         "linkType": "HARD"\
       }]\

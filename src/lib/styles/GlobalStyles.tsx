@@ -1,6 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+interface Props {
+   theme: {
+      colors: {
+         primary: string;
+      };
+   };
+}
+
+const GlobalStyle = createGlobalStyle<Props>`
   html,
   body {
     color: ${({ theme }) => theme.colors.primary};
