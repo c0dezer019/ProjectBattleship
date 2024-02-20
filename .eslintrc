@@ -1,0 +1,23 @@
+{
+  "root": true,
+	"extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": { "project": ["./tsconfig.json"] },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+	"rules": {
+		"prefer-destructuring": ["warn", { "array": true }],
+		"prefer-arrow-callback": ["error"],
+    "react/function-component-definition": [0],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
+	},
+  "ignorePatterns": [
+    "src/**/*.test.[ts|tsx|js|jsx], out"
+  ]
+}
