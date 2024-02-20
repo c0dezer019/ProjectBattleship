@@ -24,6 +24,8 @@ export const StyledPanel = styled.div`
    height: 100%;
 `;
 
+export const StyledGrid = styled.div``;
+
 export const StyledGamePiece = styled.img.attrs<ImageProps>(props => ({
    $url: props.$url,
    $rotVal: props.$rot ? 90 : 0,

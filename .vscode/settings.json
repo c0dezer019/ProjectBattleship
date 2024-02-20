@@ -8,6 +8,7 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
 "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
 "conventionalCommits.scopes": [
-   "UI"
+   "UI",
+   "lib"
 ]
 }

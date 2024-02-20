@@ -1,7 +1,7 @@
-import { HealthValue, Rotation } from '../';
+import { HealthValue, Rotation, GamePiece } from '../';
 
 export interface ActorType {
    rotation: Rotation;
-   type: string;
+   type: GamePiece;
    hp: HealthValue;
 }

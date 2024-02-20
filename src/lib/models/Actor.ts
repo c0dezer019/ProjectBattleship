@@ -1,11 +1,11 @@
-import type { ActorType, Rotation, HealthValue } from '../utils/types';
+import type { ActorType, Rotation, HealthValue, GamePiece } from '../utils/types';
 
 class Actor implements ActorType {
    private _rotation: Rotation;
-   private _type: string;
+   private _type: GamePiece;
    private _hp: HealthValue;
 
-   constructor(hp: HealthValue, type: string, rotation: Rotation = 0) {
+   constructor(hp: HealthValue, type: GamePiece, rotation: Rotation = 0) {
       this._hp = hp;
       this._type = type;
       this._rotation = rotation;
@@ -15,7 +15,7 @@ class Actor implements ActorType {
       return this._rotation;
    }
 
-   public get type(): string {
+   public get type(): GamePiece {
       return this._type;
    }
 
@@ -27,7 +27,7 @@ class Actor implements ActorType {
       this._rotation = rotation;
    }
 
-   protected set type(newType: string) {
+   protected set type(newType: GamePiece) {
       this._type = newType;
    }
 
@@ -36,7 +36,5 @@ class Actor implements ActorType {
    }
 
 }
-
-const t = new Actor(3, 'Battleship')
 
 export default Actor;
