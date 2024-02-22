@@ -1,7 +1,8 @@
-import { HealthValue, Rotation, GamePiece } from '../';
+import { GamePieceHealth, Angle, GamePiece } from '../';
 
-export interface ActorType {
-   rotation: Rotation;
+export interface iActor {
+   direction: Angle;
    type: GamePiece;
-   hp: HealthValue;
+   hp: GamePieceHealth;
+   speed: number;
 }
