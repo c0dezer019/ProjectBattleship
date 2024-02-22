@@ -1,8 +1,8 @@
-import React, { FC, ReactElement } from "react";
+import React, { FC, ReactElement } from 'react';
 
-import { StyledGameboard } from "@/lib/styles";
+import { StyledGameboard } from '@/lib/styles';
 
-import { Grid } from "../";
+import { Grid } from '../';
 
 export const Gameboard: FC = (): ReactElement => {
 	return (

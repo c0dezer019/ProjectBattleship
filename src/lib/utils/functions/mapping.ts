@@ -6,13 +6,13 @@ import type { Coordinate, PieceMap } from '../types/global';
  * @returns Array of Coordinate.
  */
 export const gameMap = (map: PieceMap): Array<Coordinate> => {
-   const _map: Array<Coordinate> = [];
+	const _map: Array<Coordinate> = [];
 
-   map.forEach(piece => {
-      piece.forEach(coord => {
-         _map.push(coord);
-      });
-   });
+	map.forEach((piece) => {
+		piece.forEach((coord) => {
+			_map.push(coord);
+		});
+	});
 
-   return _map;
+	return _map;
 };

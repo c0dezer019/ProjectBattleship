@@ -1,9 +1,9 @@
-export interface iGameType {
-   gameOver: boolean;
+export interface iGame {
+	gameOver: boolean;
 }
 
-export interface iScoreBoard {
-   wins: number;
-   losses: number;
-   points: number;
+export interface iScoreboard {
+	wins: number;
+	losses: number;
+	points: number;
 }

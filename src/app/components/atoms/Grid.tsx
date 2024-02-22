@@ -1,6 +1,6 @@
-import React, { FC, ReactElement, useEffect, useState } from "react";
+import React, { FC, ReactElement, useEffect, useState } from 'react';
 
-import { StyledGrid } from "@/lib/styles";
+import { StyledGrid } from '@/lib/styles';
 
 interface Props {
 	rows?: number;

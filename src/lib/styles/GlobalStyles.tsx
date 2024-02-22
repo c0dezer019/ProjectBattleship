@@ -1,11 +1,11 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 interface Props {
-   theme: {
-      colors: {
-         primary: string;
-      };
-   };
+	theme: {
+		colors: {
+			primary: string;
+		};
+	};
 }
 
 const GlobalStyle = createGlobalStyle<Props>`
